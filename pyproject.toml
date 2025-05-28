@@ -1,6 +1,60 @@
 [build-system]
-requires = ["setuptools >= 46.4.0", "wheel"]
+requires = ["setuptools>=64", "setuptools-scm>=8", "wheel"]
 build-backend = "setuptools.build_meta"
+
+[project]
+name = "trk234"
+authors = [
+    { name = "PDS", email = "pds_operator@jpl.nasa.gov" }
+]
+description = ""
+readme = "README.md"
+dynamic = ["version"]
+license = "apache-2.0"
+keywords = ["pds", "planetary data"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Operating System :: OS Independent",
+]
+requires-python = ">=3.9"
+
+[tool.setuptools_scm]
+version_file = "src/trk234/_version.py"
+
+[project.optional-dependencies]
+dev = [
+    "black~=23.7.0",
+    "flake8~=6.1.0",
+    "flake8-bugbear~=23.7.10",
+    "flake8-docstrings~=1.7.0",
+    "pep8-naming~=0.13.3",
+    "mypy~=1.5.1",
+    "pydocstyle~=6.3.0",
+    "coverage~=7.3.0",
+    "pytest~=7.4.0",
+    "pytest-cov~=4.1.0",
+    "pytest-watch~=4.2.0",
+    "pytest-xdist~=3.3.1",
+    "pre-commit~=3.3.3",
+    "sphinx~=3.2.1",
+    "sphinx-rtd-theme~=0.5.0",
+    "tox~=4.11.0",
+    "types-setuptools~=68.1.0.0",
+    "Jinja2<3.1"
+]
+
+[project.urls]
+Repository = "https://github.com/NASA-PDS/PyTrk234"
+
+[project.scripts]
+trk234_dnlink = "trk234.scripts.trk234_dnlink:execute"
+trk234_dump = "trk234.scripts.trk234_dump:execute"
+trk234_extract = "trk234.scripts.trk234_extract:execute"
+trk234_info = "trk234.scripts.trk234_info:execute"
+trk234_purify = "trk234.scripts.trk234_purify:execute"
+trk234_ramp = "trk234.scripts.trk234_ramp:execute"
+trk234_regroup = "trk234.scripts.trk234_regroup:execute"
 
 [tool.black]
 line-length = 120

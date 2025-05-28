@@ -1,13 +1,13 @@
 #!/usr/bin/python3
 # Copyright (c) 2023, California Institute of Technology ("Caltech").
-# U.S. Government sponsorship acknowledged. Any commercial use must be 
-# negotiated with the Office of Technology Transfer at the California 
+# U.S. Government sponsorship acknowledged. Any commercial use must be
+# negotiated with the Office of Technology Transfer at the California
 # Institute of Technology.
-# 
-# This software may be subject to U.S. export control laws. By accepting this 
-# software, the user agrees to comply with all applicable U.S. export laws 
-# and regulations. User has the responsibility to obtain export licenses, or 
-# other export authority as may be required before exporting such information 
+#
+# This software may be subject to U.S. export control laws. By accepting this
+# software, the user agrees to comply with all applicable U.S. export laws
+# and regulations. User has the responsibility to obtain export licenses, or
+# other export authority as may be required before exporting such information
 # to foreign countries or providing access to foreign persons.
 #
 # All rights reserved.
@@ -53,3 +53,9 @@ from .Reader import Reader
 from .Info import Info
 from .SFDU import SFDU
 from .util import bands, format_codes, data_descriptions, types
+from importlib.metadata import version, PackageNotFoundError
+
+try:
+    __version__ = version("trk234")
+except PackageNotFoundError:
+    pass
