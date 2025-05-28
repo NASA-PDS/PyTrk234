@@ -39,25 +39,13 @@ This is a Python library package with scripts and configuration files.
 The library  can be installed by cloning the repository to your local machine and running:
 
 ```
-pip install \path\to\trk234
+git clone https://github.com/NASA-PDS/PyTrk234.git
+cd PyTrk234
+pip3 install . -v
+python3 -c "import trk234"
 ```
 
 Note the installation path. Add files from the `scripts/` directory to your execution path, and if using the `bin/` execution scripts, update the paths in the scripts appropriately.
-
-### Configuration
-
-For users with complicated Python environments or wish to simplify the installation, several `bash` scripts are provided in the `bin/` directory. In each of the files, edit the statement to point to the correct directory the library is installed:
-
-```
-# update pythonpath for the correct libraries
-export PYTHONPATH=$PYTHONPATH:/home/source/trk234
-```
-
-Also update the location of the scripts:
-```
-# add the path of the script install directory
-SCRIPTDIR=/home/source/trk234/scripts
-```
 
 ## Library Architecture
 

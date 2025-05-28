@@ -43,6 +43,7 @@ develop-eggs/
 .eggs/
 pip-selfcheck.json
 .python-version
+_version.py
 
 # Python testing artifacts
 .coverage

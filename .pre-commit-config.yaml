@@ -2,8 +2,6 @@ repos:
 -   repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v4.0.1
     hooks:
-    -   id: trailing-whitespace
-        exclude: REQUIREMENTS\.md$
     -   id: end-of-file-fixer
         exclude: REQUIREMENTS\.md$
     -   id: check-merge-conflict
