@@ -25,7 +25,7 @@ version_file = "src/trk234/_version.py"
 [project.optional-dependencies]
 dev = [
     "black~=23.7.0",
-    "flake8~=6.1.0",
+    "flake8~=7.3.0",
     "flake8-bugbear~=23.7.10",
     "flake8-docstrings~=1.7.0",
     "pep8-naming~=0.13.3",
