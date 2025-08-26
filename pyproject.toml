@@ -40,7 +40,7 @@ dev = [
     "sphinx~=3.2.1",
     "sphinx-rtd-theme~=0.5.0",
     "tox~=4.11.0",
-    "types-setuptools~=68.1.0.0",
+    "types-setuptools~=80.9.0.20250822",
     "Jinja2<3.1"
 ]
 
